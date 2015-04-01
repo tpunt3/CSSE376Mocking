@@ -76,6 +76,8 @@ namespace ExpediaTest
             result = target.getCarLocation(1);
             Assert.AreEqual(result, "In a volcano");
 
+            mocks.VerifyAll();
+
         }
 
         [TestMethod]
@@ -98,6 +100,8 @@ namespace ExpediaTest
             int mileCount = target.Mileage;
 
             Assert.AreEqual(mileCount, miles);
+
+            mocks.VerifyAll();
 
         }
 
