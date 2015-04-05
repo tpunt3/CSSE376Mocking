@@ -110,7 +110,7 @@ namespace ExpediaTest
 
             int roomCount = target.AvailableRooms;
 
-            Assert.AreEqual(roomCount, Rooms.Count);
+            Assert.AreEqual(Rooms.Count, roomCount);
 
             mocks.VerifyAll();
 

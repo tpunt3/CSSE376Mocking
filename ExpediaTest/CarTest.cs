@@ -68,13 +68,13 @@ namespace ExpediaTest
             String result;
 
             result = target.getCarLocation(7);
-            Assert.AreEqual(result, "Driving around town");
+            Assert.AreEqual("Driving around town", result);
 
             result = target.getCarLocation(14);
-            Assert.AreEqual(result, "On the beach");
+            Assert.AreEqual("On the beach", result);
 
             result = target.getCarLocation(1);
-            Assert.AreEqual(result, "In a volcano");
+            Assert.AreEqual("In a volcano", result);
 
             mocks.VerifyAll();
 
@@ -99,7 +99,7 @@ namespace ExpediaTest
 
             int mileCount = target.Mileage;
 
-            Assert.AreEqual(mileCount, miles);
+            Assert.AreEqual(miles, mileCount);
 
             mocks.VerifyAll();
 
